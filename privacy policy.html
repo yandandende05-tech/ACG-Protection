@@ -266,101 +266,116 @@
         padding: 2rem;
       }
     }
-    /* ==========================================
-   MOBILE HEADER FIX & RESPONSIVE IMPROVEMENT
+/* ==========================================
+   PROFESSIONAL MOBILE RESPONSIVENESS
 ========================================== */
 
 @media (max-width: 768px) {
 
-/* Prevent content from hiding under fixed header */
-main {
-  padding-top: 180px;
-}
+  /* Smaller fixed header for phones */
+  header {
+    padding: 0.5rem 0;
+  }
 
-/* Better mobile header spacing */
-header {
-  padding: 0.8rem 0;
-}
+  /* Prevent sections hiding under header */
+  main {
+    padding-top: 140px;
+  }
 
-nav {
-  padding: 0 1rem;
-}
+  nav {
+    padding: 0 1rem;
+  }
 
-nav ul {
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
+  /* Compact mobile menu */
+  nav ul {
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: center;
+  }
 
-nav ul li {
-  margin: 0.2rem 0;
-}
+  nav ul li {
+    margin: 0;
+  }
 
-nav ul li a {
-  display: block;
-  width: 100%;
-  padding: 0.7rem;
-}
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
 
-/* Logo scaling for mobile */
-.logo-img {
-  width: 90px;
-}
+  /* Smaller logo for cleaner appearance */
+  .logo-img {
+    width: 70px;
+  }
 
-.slogan {
-  font-size: 0.8rem;
-}
+  .slogan {
+    font-size: 0.75rem;
+    margin-top: 2px;
+  }
 
-/* Hero section adjustment */
-.hero-section {
-  height: auto;
-  min-height: 75vh;
-  padding: 3rem 1rem;
-}
+  /* Hero section positioning */
+  .hero-section {
+    min-height: 60vh;
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
-.hero-content {
-  padding: 1rem;
-}
+  .hero-content {
+    padding: 0;
+    width: 100%;
+  }
 
-.hero-content h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-}
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
 
-.hero-content p {
-  font-size: 1rem;
-  padding: 0 10px;
-}
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0 10px;
+  }
 
-.cta-button {
-  width: 100%;
-  max-width: 280px;
-  text-align: center;
-}
+  /* Professional mobile button */
+  .cta-button {
+    display: inline-block;
+    width: auto;
+    min-width: 220px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
 
-/* Features section better spacing */
-.features-section,
-.about-section {
-  padding: 3rem 1rem;
-}
+  /* Better spacing between sections */
+  .about-section,
+  .features-section {
+    padding: 3rem 1.2rem;
+  }
 
-.features-grid {
-  grid-template-columns: 1fr;
-}
+  .about-section h2,
+  .features-section h2 {
+    font-size: 2rem;
+  }
 
-.feature-card {
-  padding: 1.5rem;
-}
+  /* Stack feature cards nicely */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 
-/* Footer responsiveness */
-.footer-links {
-  flex-direction: column;
-  gap: 0.8rem;
-}
+  .feature-card {
+    padding: 1.5rem;
+  }
 
-.footer-links a {
-  margin: 0;
-}
+  /* Cleaner footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer-links a {
+    margin: 0;
+  }
 }
   </style>
 </head>
