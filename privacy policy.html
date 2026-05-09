@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Albatross  Creative Group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #030406;
+      --secondary: #000000;
+      --accent: #ff0000;
+      --light: #f7fafc;
+      --dark: #1a202c;
+      --success: #48bb78;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin: 0 1rem;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.slogan {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+}
+    
+    main {
+      padding-top: 100px;
+      min-height: calc(100vh - 160px);
+    }
+    
+    .privacy-container {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    
+    .privacy-hero {
+      background: url('https://images.unsplash.com/photo-1584432810601-6c7f27d4d3b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    
+    .privacy-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 2rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    
+    .privacy-content {
+      background: white;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .privacy-content h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .privacy-content h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    
+    .privacy-content h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .privacy-content p {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+    
+    .privacy-content ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    
+    .privacy-content li {
+      margin-bottom: 0.8rem;
+      color: #4a5568;
+    }
+    
+    .privacy-content a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .privacy-content a:hover {
+      color: var(--accent);
+    }
+    
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-links a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+    
+    .social-icons {
+      margin-bottom: 1rem;
+    }
+    
+    .social-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: var(--accent);
+    }
+    
+    .copyright {
+      font-size: 0.9rem;
+      color: #a0aec0;
+    }
+    
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+      
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      
+      .privacy-content {
+        padding: 2rem;
+      }
+    }
+    /* ==========================================
+   MOBILE HEADER FIX & RESPONSIVE IMPROVEMENT
+========================================== */
+
+@media (max-width: 768px) {
+
+/* Prevent content from hiding under fixed header */
+main {
+  padding-top: 180px;
+}
+
+/* Better mobile header spacing */
+header {
+  padding: 0.8rem 0;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 0.2rem 0;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+}
+
+/* Logo scaling for mobile */
+.logo-img {
+  width: 90px;
+}
+
+.slogan {
+  font-size: 0.8rem;
+}
+
+/* Hero section adjustment */
+.hero-section {
+  height: auto;
+  min-height: 75vh;
+  padding: 3rem 1rem;
+}
+
+.hero-content {
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+.cta-button {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+/* Features section better spacing */
+.features-section,
+.about-section {
+  padding: 3rem 1rem;
+}
+
+.features-grid {
+  grid-template-columns: 1fr;
+}
+
+.feature-card {
+  padding: 1.5rem;
+}
+
+/* Footer responsiveness */
+.footer-links {
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  margin: 0;
+}
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="images/ACG.jpg" alt="ACG Logo" class="logo-img">
+          
+          <div class="slogan">
+            Protecting Lives and Properties
+          </div>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <main>
+    <section class="privacy-hero">
+      <div class="hero-content">
+        <h1>Privacy Policy</h1>
+        <p>Your privacy is our priority. Learn how we protect your information.</p>
+      </div>
+    </section>
+    
+    <div class="privacy-container">
+      <div class="privacy-content">
+        <h2>Your Privacy Matters to Us</h2>
+        <p>At Albatross  Creative Group, we understand that privacy is not just a policy—it's a fundamental right. As a security company, we take our responsibility to protect your personal information as seriously as we protect our clients' physical security. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+        
+        <h3>What Information We Collect</h3>
+        <h4>Information You Provide Voluntarily</h4>
+        <p>When you interact with our services, you may choose to provide us with certain personal information, including:</p>
+        <ul>
+          <li><strong>Contact Details</strong>: Your name, email address, phone number, and physical address when you request a quote or service</li>
+          <li><strong>Service Preferences</strong>: Information about the security services you're interested in</li>
+          <li><strong>Payment Information</strong>: Credit card details or bank account information for service payments (processed securely through PCI-compliant systems)</li>
+          <li><strong>Communications</strong>: Records of your correspondence with our team</li>
+        </ul>
+        
+        <h4>Information We Collect Automatically</h4>
+        <p>Like most modern websites, we collect certain information automatically:</p>
+        <ul>
+          <li><strong>Device Information</strong>: IP address, browser type, operating system, and device identifiers</li>
+          <li><strong>Usage Data</strong>: Pages visited, time spent, click patterns, and navigation paths</li>
+          <li><strong>Cookies & Tracking</strong>: Small data files that enhance your browsing experience (you can control these through your browser settings)</li>
+        </ul>
+        
+        <h3>How We Use Your Information</h3>
+        <p>We use your personal information responsibly and only for legitimate business purposes:</p>
+        <ul>
+          <li><strong>To Provide Our Services</strong>: Delivering the security solutions you've requested</li>
+          <li><strong>Customer Support</strong>: Responding to your inquiries and providing assistance</li>
+          <li><strong>Service Improvement</strong>: Analyzing usage patterns to enhance our website and services</li>
+          <li><strong>Security Monitoring</strong>: Protecting against fraudulent activity and unauthorized access</li>
+          <li><strong>Marketing Communications</strong>: Sending relevant information about our services (you can opt-out anytime)</li>
+          <li><strong>Legal Compliance</strong>: Meeting our regulatory obligations and responding to lawful requests</li>
+        </ul>
+        
+        <h3>How We Protect Your Data</h3>
+        <h4>Our Security Commitment</h4>
+        <p>As security professionals, we implement robust measures to safeguard your information:</p>
+        <ul>
+          <li><strong>Encryption</strong>: All sensitive data is encrypted in transit and at rest</li>
+          <li><strong>Access Controls</strong>: Strict limitations on who can access your information</li>
+          <li><strong>Regular Audits</strong>: Ongoing security assessments to identify and address vulnerabilities</li>
+          <li><strong>Employee Training</strong>: Comprehensive privacy training for all staff members</li>
+          <li><strong>Incident Response</strong>: Established protocols for potential data breaches</li>
+        </ul>
+        
+        <h4>Data Retention Practices</h4>
+        <p>We retain your personal information only as long as necessary to:</p>
+        <ul>
+          <li>Fulfill the purposes outlined in this policy</li>
+          <li>Comply with legal obligations</li>
+          <li>Resolve disputes</li>
+          <li>Enforce our agreements</li>
+        </ul>
+        
+        <h3>Your Privacy Rights & Choices</h3>
+        <h4>Control Over Your Information</h4>
+        <p>You have important rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access</strong>: Request a copy of the personal data we hold about you</li>
+          <li><strong>Correction</strong>: Ask us to update or correct inaccurate information</li>
+          <li><strong>Deletion</strong>: Request deletion of your personal data under certain circumstances</li>
+          <li><strong>Restriction</strong>: Limit how we use your information</li>
+          <li><strong>Objection</strong>: Object to certain processing activities</li>
+          <li><strong>Portability</strong>: Receive your data in a structured, commonly used format</li>
+        </ul>
+        
+        <h4>Marketing Preferences</h4>
+        <p>You can manage your marketing preferences by:</p>
+        <ul>
+          <li>Clicking the "unsubscribe" link in any marketing email</li>
+          <li>Contacting us directly at <a href="mailto:Albatrossprotection@gmail.com">Albatrossprotection@gmail.com</a></li>
+          <li>Updating your preferences in your account settings (if applicable)</li>
+        </ul>
+        
+        <h3>Third-Party Services</h3>
+        <p>We carefully select service providers who share our commitment to privacy:</p>
+        <ul>
+          <li><strong>Payment Processors</strong>: Secure transaction handling</li>
+          <li><strong>Analytics Providers</strong>: Website usage analysis (anonymous where possible)</li>
+          <li><strong>Marketing Platforms</strong>: Targeted communications (with appropriate safeguards)</li>
+        </ul>
+        
+        <h3>Children's Privacy</h3>
+        <p>Our services are not directed to children under 16. We do not knowingly collect personal information from children. If we become aware that we have inadvertently received personal information from a child, we will delete it immediately.</p>
+        
+        <h3>International Data Transfers</h3>
+        <p>For clients outside the United States, please note:</p>
+        <ul>
+          <li>We primarily operate in and store data in the U.S.</li>
+          <li>When international transfers occur, we implement appropriate safeguards</li>
+          <li>By using our services, you consent to this transfer and processing</li>
+        </ul>
+        
+        <h3>Updates to This Policy</h3>
+        <p>We may update this Privacy Policy periodically to reflect:</p>
+        <ul>
+          <li>Changes in our practices</li>
+          <li>New technologies</li>
+          <li>Legal requirements</li>
+          <li>Service enhancements</li>
+        </ul>
+        <p>We'll notify you of significant changes through our website or direct communication. The "Last Updated" date at the bottom of this page indicates when the policy was last revised.</p>
+        
+        <h3>Contact Our Privacy Team</h3>
+        <p>Have questions or concerns about your privacy? Our dedicated team is here to help:</p>
+        <strong>Email</strong>: <a href="mailto:Albatrossprotection@gmail.com">Albatrossprotection@gmail.com</a><br>
+        <strong>Phone</strong>: <a href="tel:033 327 2006">(033) 327-2006</a> (Privacy Line)<br>
+        <strong>Address</strong>: <a href="140427 Selby Msimang Road,
+        Pietermaritzburg, KwaZulu-Natal">140427 Selby Msimang Road, Pietermaritzburg, KwaZulu-Natal</a>
+        
+        <h3>Your Trust Is Our Priority</h3>
+        <p>At Albatross  Creative Group, we believe that trust is the foundation of security. We're committed to being transparent about our privacy practices and giving you control over your personal information. Thank you for trusting us with your security needs—we promise to honor that trust every day.</p>
+        
+        <p><strong>Last Updated</strong>: August 15, 2025</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy policy.html">Privacy Policy</a>
+      </div>
+      
+      <p class="copyright">© 2022 Albatross  Creative Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
